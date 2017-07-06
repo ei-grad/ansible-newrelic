@@ -7,7 +7,6 @@
   apt_key:
     url: https://download.newrelic.com/548C16BF.gpg
     id: 548C16BF
-    state: present
 
 - name: Debian | Add New Relic repository
   apt_repository:
@@ -20,6 +19,5 @@
     pkg: newrelic-sysmond
     update_cache: yes
     cache_valid_time: 86400
-    state: latest
   notify:
     - Restart New Relic

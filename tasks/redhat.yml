@@ -22,6 +22,5 @@
 - name: RedHat | Install New Relic Sysmond
   yum:
     name: newrelic-sysmond
-    state: latest
   notify:
     - Restart New Relic
